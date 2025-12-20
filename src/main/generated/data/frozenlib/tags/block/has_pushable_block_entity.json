@@ -1,0 +1,92 @@
+{
+  "values": [
+    {
+      "id": "#pushierpistons:pushable_chests",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_barrels",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_chiseled_bookshelves",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_furnaces",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_brewing_stands",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_enchanting_tables",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_item_transporters",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_ejectors",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_crafters",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_daylight_detectors",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_spawners",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_trial_spawners",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_vaults",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_beacons",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_conduits",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_beehives",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_campfires",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_geysers",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_surveyors",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_nether_reactor_cores",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_copper_pipes",
+      "required": false
+    },
+    {
+      "id": "#pushierpistons:pushable_copper_fittings",
+      "required": false
+    }
+  ]
+}

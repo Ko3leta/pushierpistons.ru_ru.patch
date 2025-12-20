@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "Pushier Pistons",
+  "description": "Lets Pistons push Block Entities, and implements Chainstone!",
+  "authors": [
+    "Lunade"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/pushier-pistons",
+    "sources": "https://github.com/FrozenBlock/PushierPistons",
+    "issues": "https://github.com/FrozenBlock/PushierPistons/issues"
+  },
+  "license": "FrozenBlock Modding Oasis License v1.0",
+  "icon": "assets/pushierpistons/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.frozenblock.pushierpistons.PushierPistons"
+    ],
+    "client": [
+      "net.frozenblock.pushierpistons.PushierPistonsClient"
+    ],
+    "modmenu": [
+      "net.frozenblock.pushierpistons.config.gui.ModMenuIntegration"
+    ],
+    "fabric-datagen": [
+      "net.frozenblock.pushierpistons.datagen.PPDataGenerator"
+    ]
+  },
+  "mixins": [
+    "pushierpistons.chainstone.mixins.json",
+    "pushierpistons.pushable_block_entity.mixins.json"
+  ],
+  "accessWidener": "pushierpistons.accesswidener",
+  "depends": {
+    "frozenlib": "${frozenlib_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21"
+  },
+  "suggests": {
+    "cloth-config": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "X": "https://x.com/FB_Oasis",
+        "Bluesky": "https://bsky.app/profile/frozenblock.bsky.social",
+        "modmenu.discord": "https://discord.gg/frozenblock",
+        "modmenu.modrinth": "https://modrinth.com/organization/frozenblock",
+        "modmenu.youtube": "https://www.youtube.com/@frozenblockmoddingoasismod",
+        "modmenu.kofi": "https://ko-fi.com/frozenblock"
+      },
+      "badges": [
+        "frozenblock"
+      ]
+    },
+    "frozenlib_registry": {
+      "mod_protocol": $protocol_version
+    }
+  }
+}

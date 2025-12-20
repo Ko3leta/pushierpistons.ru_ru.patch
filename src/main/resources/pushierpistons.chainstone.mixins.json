@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "net.frozenblock.pushierpistons.chainstone.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PistonStructureResolverMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
