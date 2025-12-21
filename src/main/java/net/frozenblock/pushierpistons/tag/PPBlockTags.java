@@ -27,6 +27,8 @@ public final class PPBlockTags {
 	public static final TagKey<Block> PUSHABLE_CHESTS = bind("pushable_chests");
 	public static final TagKey<Block> PUSHABLE_BARRELS = bind("pushable_barrels");
 	public static final TagKey<Block> PUSHABLE_CHISELED_BOOKSHELVES = bind("pushable_chiseled_bookshelves");
+	public static final TagKey<Block> PUSHABLE_LECTERNS = bind("pushable_lecterns");
+	public static final TagKey<Block> PUSHABLE_SHELVES = bind("pushable_shelves");
 	// UTILITY
 	public static final TagKey<Block> PUSHABLE_FURNACES = bind("pushable_furnaces");
 	public static final TagKey<Block> PUSHABLE_BREWING_STANDS = bind("pushable_brewing_stands");
@@ -37,6 +39,7 @@ public final class PPBlockTags {
 	public static final TagKey<Block> PUSHABLE_CRAFTERS = bind("pushable_crafters");
 	public static final TagKey<Block> PUSHABLE_DAYLIGHT_DETECTORS = bind("pushable_daylight_detectors");
 	// COMBAT
+	public static final TagKey<Block> PUSHABLE_CREAKING_HEARTS = bind("pushable_creaking_hearts");
 	public static final TagKey<Block> PUSHABLE_SPAWNERS = bind("pushable_spawners");
 	public static final TagKey<Block> PUSHABLE_TRIAL_SPAWNERS = bind("pushable_trial_spawners");
 	public static final TagKey<Block> PUSHABLE_VAULTS = bind("pushable_vaults");
@@ -46,6 +49,7 @@ public final class PPBlockTags {
 	// OTHER
 	public static final TagKey<Block> PUSHABLE_BEEHIVES = bind("pushable_beehives");
 	public static final TagKey<Block> PUSHABLE_CAMPFIRES = bind("pushable_campfires");
+	public static final TagKey<Block> PUSHABLE_SIGNS = bind("pushable_signs");
 	// WILDER WILD
 	public static final TagKey<Block> PUSHABLE_GEYSERS = bind("pushable_geysers");
 	// TRAILIER TALES

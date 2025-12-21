@@ -91,10 +91,30 @@ public final class PPConfigGui {
 			"pushableChiseledBookshelves",
 			configInstance
 		);
+		final var pushableLecterns = FrozenClothConfig.syncedEntry(
+			entryBuilder.startBooleanToggle(text("pushable_lecterns"), modifiedConfig.pushableLecterns)
+				.setDefaultValue(defaultConfig.pushableLecterns)
+				.setSaveConsumer(newValue -> config.pushableLecterns = newValue)
+				.setTooltip(tooltip("pushable_lecterns"))
+				.build(),
+			config.getClass(),
+			"pushableLecterns",
+			configInstance
+		);
+		final var pushableShelves = FrozenClothConfig.syncedEntry(
+			entryBuilder.startBooleanToggle(text("pushable_shelves"), modifiedConfig.pushableShelves)
+				.setDefaultValue(defaultConfig.pushableShelves)
+				.setSaveConsumer(newValue -> config.pushableShelves = newValue)
+				.setTooltip(tooltip("pushable_shelves"))
+				.build(),
+			config.getClass(),
+			"pushableShelves",
+			configInstance
+		);
 		final var storageCategory = FrozenClothConfig.createSubCategory(entryBuilder, category, text("storage"),
 			false,
 			tooltip("storage"),
-			pushableChests, pushableBarrels, pushableChiseledBookshelves
+			pushableChests, pushableBarrels, pushableChiseledBookshelves, pushableLecterns, pushableShelves
 		);
 
 		// STORAGE
@@ -182,6 +202,16 @@ public final class PPConfigGui {
 		);
 
 		// COMBAT
+		final var pushableCreakingHearts = FrozenClothConfig.syncedEntry(
+			entryBuilder.startBooleanToggle(text("pushable_creaking_hearts"), modifiedConfig.pushableCreakingHearts)
+				.setDefaultValue(defaultConfig.pushableCreakingHearts)
+				.setSaveConsumer(newValue -> config.pushableCreakingHearts = newValue)
+				.setTooltip(tooltip("pushable_creaking_hearts"))
+				.build(),
+			config.getClass(),
+			"pushableCreakingHearts",
+			configInstance
+		);
 		final var pushableSpawners = FrozenClothConfig.syncedEntry(
 			entryBuilder.startBooleanToggle(text("pushable_spawners"), modifiedConfig.pushableSpawners)
 				.setDefaultValue(defaultConfig.pushableSpawners)
@@ -215,7 +245,7 @@ public final class PPConfigGui {
 		final var combatCategory = FrozenClothConfig.createSubCategory(entryBuilder, category, text("combat"),
 			false,
 			tooltip("combat"),
-			pushableSpawners, pushableTrialSpawners, pushableVaults
+			pushableCreakingHearts, pushableSpawners, pushableTrialSpawners, pushableVaults
 		);
 
 		// BUFFS
@@ -266,10 +296,20 @@ public final class PPConfigGui {
 			"pushableCampfires",
 			configInstance
 		);
+		final var pushableSigns = FrozenClothConfig.syncedEntry(
+			entryBuilder.startBooleanToggle(text("pushable_signs"), modifiedConfig.pushableSigns)
+				.setDefaultValue(defaultConfig.pushableSigns)
+				.setSaveConsumer(newValue -> config.pushableSigns = newValue)
+				.setTooltip(tooltip("pushable_signs"))
+				.build(),
+			config.getClass(),
+			"pushableSigns",
+			configInstance
+		);
 		final var otherCategory = FrozenClothConfig.createSubCategory(entryBuilder, category, text("other"),
 			false,
 			tooltip("other"),
-			pushableBeehives, pushableCampfires
+			pushableBeehives, pushableCampfires, pushableSigns
 		);
 
 		// WILDER WILD

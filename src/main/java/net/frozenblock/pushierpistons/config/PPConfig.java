@@ -50,6 +50,8 @@ public class PPConfig {
 				PUSHABLE_CHESTS = config.pushableChests;
 				PUSHABLE_BARRELS = config.pushableBarrels;
 				PUSHABLE_CHISELED_BOOKSHELVES = config.pushableChiseledBookshelves;
+				PUSHABLE_LECTERNS = config.pushableLecterns;
+				PUSHABLE_SHELVES = config.pushableShelves;
 
 				// UTILITY
 				PUSHABLE_FURNACES = config.pushableFurnaces;
@@ -63,6 +65,7 @@ public class PPConfig {
 				PUSHABLE_DAYLIGHT_DETECTORS = config.pushableDaylightDetectors;
 
 				// COMBAT
+				PUSHABLE_CREAKING_HEARTS = config.pushableCreakingHearts;
 				PUSHABLE_SPAWNERS = config.pushableSpawners;
 				PUSHABLE_TRIAL_SPAWNERS = config.pushableTrialSpawners;
 				PUSHABLE_VAULTS = config.pushableVaults;
@@ -74,6 +77,7 @@ public class PPConfig {
 				// OTHER
 				PUSHABLE_BEEHIVES = config.pushableBeehives;
 				PUSHABLE_CAMPFIRES = config.pushableCampfires;
+				PUSHABLE_SIGNS = config.pushableSigns;
 
 				// WILDER WILD
 				PUSHABLE_GEYSERS = config.pushableGeysers;
@@ -109,6 +113,14 @@ public class PPConfig {
 	@EntrySyncData("pushableChiseledBookshelves")
 	public boolean pushableChiseledBookshelves = true;
 
+	public static volatile boolean PUSHABLE_LECTERNS = true;
+	@EntrySyncData("pushableLecterns")
+	public boolean pushableLecterns = true;
+
+	public static volatile boolean PUSHABLE_SHELVES = true;
+	@EntrySyncData("pushableShelves")
+	public boolean pushableShelves = true;
+
 	// UTILITY
 	public static volatile boolean PUSHABLE_FURNACES = true;
 	@EntrySyncData("pushableFurnaces")
@@ -140,6 +152,10 @@ public class PPConfig {
 	public boolean pushableDaylightDetectors = true;
 
 	// COMBAT
+	public static volatile boolean PUSHABLE_CREAKING_HEARTS = false;
+	@EntrySyncData("pushableCreakingHearts")
+	public boolean pushableCreakingHearts = true;
+
 	public static volatile boolean PUSHABLE_SPAWNERS = false;
 	@EntrySyncData("pushableSpawners")
 	public boolean pushableSpawners = false;
@@ -169,6 +185,10 @@ public class PPConfig {
 	public static volatile boolean PUSHABLE_CAMPFIRES = true;
 	@EntrySyncData("pushableCampfires")
 	public boolean pushableCampfires = true;
+
+	public static volatile boolean PUSHABLE_SIGNS = false;
+	@EntrySyncData("pushableSigns")
+	public boolean pushableSigns = false;
 
 	// WILDER WILD
 	public static volatile boolean PUSHABLE_GEYSERS = true;

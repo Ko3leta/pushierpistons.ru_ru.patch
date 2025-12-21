@@ -4,7 +4,11 @@
   "package": "net.frozenblock.pushierpistons.pushable_block_entity.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "PistonBaseBlockMixin"
+    "PistonBaseBlockMixin",
+    "lectern.LecternBlockEntityMixin",
+    "shelf.ShelfBlockMixin",
+    "shelf.ShelfBlockStickingMixin",
+    "shelf.ShelfBlockUnpowerOnMoveMixin"
   ],
   "client": [
   ],

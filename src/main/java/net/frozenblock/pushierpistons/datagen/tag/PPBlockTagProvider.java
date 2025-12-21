@@ -44,6 +44,8 @@ public final class PPBlockTagProvider extends FabricTagProvider.BlockTagProvider
 			.addOptionalTag(PPBlockTags.PUSHABLE_CHESTS)
 			.addOptionalTag(PPBlockTags.PUSHABLE_BARRELS)
 			.addOptionalTag(PPBlockTags.PUSHABLE_CHISELED_BOOKSHELVES)
+			.addOptionalTag(PPBlockTags.PUSHABLE_LECTERNS)
+			.addOptionalTag(PPBlockTags.PUSHABLE_SHELVES)
 			// UTILITY
 			.addOptionalTag(PPBlockTags.PUSHABLE_FURNACES)
 			.addOptionalTag(PPBlockTags.PUSHABLE_BREWING_STANDS)
@@ -54,6 +56,7 @@ public final class PPBlockTagProvider extends FabricTagProvider.BlockTagProvider
 			.addOptionalTag(PPBlockTags.PUSHABLE_CRAFTERS)
 			.addOptionalTag(PPBlockTags.PUSHABLE_DAYLIGHT_DETECTORS)
 			// COMBAT
+			.addOptionalTag(PPBlockTags.PUSHABLE_CREAKING_HEARTS)
 			.addOptionalTag(PPBlockTags.PUSHABLE_SPAWNERS)
 			.addOptionalTag(PPBlockTags.PUSHABLE_TRIAL_SPAWNERS)
 			.addOptionalTag(PPBlockTags.PUSHABLE_VAULTS)
@@ -63,6 +66,7 @@ public final class PPBlockTagProvider extends FabricTagProvider.BlockTagProvider
 			// OTHER
 			.addOptionalTag(PPBlockTags.PUSHABLE_BEEHIVES)
 			.addOptionalTag(PPBlockTags.PUSHABLE_CAMPFIRES)
+			.addOptionalTag(PPBlockTags.PUSHABLE_SIGNS)
 			// WILDER WILD
 			.addOptionalTag(PPBlockTags.PUSHABLE_GEYSERS)
 			// TRAILIER TALES
@@ -82,6 +86,12 @@ public final class PPBlockTagProvider extends FabricTagProvider.BlockTagProvider
 
 		this.valueLookupBuilder(PPBlockTags.PUSHABLE_CHISELED_BOOKSHELVES)
 			.add(Blocks.CHISELED_BOOKSHELF);
+
+		this.valueLookupBuilder(PPBlockTags.PUSHABLE_LECTERNS)
+			.add(Blocks.LECTERN);
+
+		this.valueLookupBuilder(PPBlockTags.PUSHABLE_SHELVES)
+			.addOptionalTag(BlockTags.WOODEN_SHELVES);
 
 		// UTILITY
 		this.valueLookupBuilder(PPBlockTags.PUSHABLE_FURNACES)
@@ -107,6 +117,9 @@ public final class PPBlockTagProvider extends FabricTagProvider.BlockTagProvider
 			.add(Blocks.DAYLIGHT_DETECTOR);
 
 		// COMBAT
+		this.valueLookupBuilder(PPBlockTags.PUSHABLE_CREAKING_HEARTS)
+			.add(Blocks.CREAKING_HEART);
+
 		this.valueLookupBuilder(PPBlockTags.PUSHABLE_SPAWNERS)
 			.add(Blocks.SPAWNER);
 
@@ -129,6 +142,9 @@ public final class PPBlockTagProvider extends FabricTagProvider.BlockTagProvider
 
 		this.valueLookupBuilder(PPBlockTags.PUSHABLE_CAMPFIRES)
 			.addOptionalTag(BlockTags.CAMPFIRES);
+
+		this.valueLookupBuilder(PPBlockTags.PUSHABLE_SIGNS)
+			.addOptionalTag(BlockTags.ALL_SIGNS);
 
 		// WILDER WILD
 		this.builder(PPBlockTags.PUSHABLE_GEYSERS)
