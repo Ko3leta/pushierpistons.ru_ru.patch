@@ -10,7 +10,7 @@
   "enum.pushierpistons.chainstone_type.chain_facing_into": "§aDefault",
   "enum.pushierpistons.chainstone_type.chains_along_same_axis": "§aAxis Check",
   "enum.pushierpistons.chainstone_type.adjacent_chains_facing_into": "§aAdjacent Chains",
-  "tooltip.pushierpistons.chainstone_type": "Default: Blocks that a Chain is facing into will stick to the Chain.\nAxis Check: Chains facing into another Chain will only stick if their axi are the same.\nAdjacent Chains: Chains adjacent to the current Chain being evaluated will also stick, if facing the Chain.",
+  "tooltip.pushierpistons.chainstone_type": "Default: Blocks at the ends of a Chain will stick.\nAxis Check: Chains facing another Chain only\nstick if their axi are the same.\nAdjacent Chains: Chains adjacent to the current\nChain will stick if facing the current Chain.",
 
   "option.pushierpistons.storage": "Pushable Storage Blocks",
   "tooltip.pushierpistons.storage": "Contains options pertaining to Storage Blocks.",
