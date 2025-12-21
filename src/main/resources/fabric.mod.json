@@ -2,8 +2,7 @@
   "schemaVersion": 1,
   "id": "${mod_id}",
   "version": "${version}",
-  "name": "Pushier Pistons",
-  "description": "Lets Pistons push Block Entities, and implements Chainstone!",
+k Entities, and implements Chainstone!",
   "authors": [
     "Lunade"
   ],
