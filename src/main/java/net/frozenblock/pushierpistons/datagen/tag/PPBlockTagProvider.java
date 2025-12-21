@@ -170,6 +170,7 @@ public final class PPBlockTagProvider extends FabricTagProvider.BlockTagProvider
 			.add(Blocks.END_PORTAL, Blocks.END_GATEWAY);
 
 		this.builder(PPBlockTags.EXCLUDED_BLOCK_ENTITIES)
+			.addOptional(getKey("wilderwild", "stone_chest"))
 			.addOptional(getKey("trailiertales", "coffin"));
 
 		// CHAINSTONE

@@ -3,6 +3,10 @@
     "minecraft:end_portal",
     "minecraft:end_gateway",
     {
+      "id": "wilderwild:stone_chest",
+      "required": false
+    },
+    {
       "id": "trailiertales:coffin",
       "required": false
     }
