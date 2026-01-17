@@ -3,7 +3,7 @@
   "option.pushierpistons.false": "§cВыкл",
   "option.pushierpistons.true": "§aВкл",
 
-  "option.pushierpistons.config": "Конфигурация Pushier Pistons",
+  "option.pushierpistons.config": "Настройки Pushier Pistons",
 
   "option.pushierpistons.chainstone_type": "Тип сцепки блоков",
   "enum.pushierpistons.chainstone_type.disabled": "§cВыкл",
